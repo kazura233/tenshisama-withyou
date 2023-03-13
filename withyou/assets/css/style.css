@@ -1,0 +1,657 @@
+@charset "UTF-8";
+
+body,
+html {
+  font-family: 'Noto Sans Japanese', serif;
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+  height: -webkit-fill-available;
+}
+body {
+  position: relative;
+  background-color: #fff;
+  min-height: 100vh;
+  height: 100%;
+  min-height: -webkit-fill-available;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+a:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+.wrapper {
+  position: relative;
+  height: 100vh;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+}
+.kv {
+  height: 100vh;
+  min-height: 100vh;
+}
+.top-kv-text {
+  position: absolute;
+  top: 1.95vh;
+  left: 6.923vw;
+  width: 280px;
+  z-index: 2;
+}
+.kv-text {
+  position: absolute;
+  top: 1.95vh;
+  left: 6.923vw;
+  max-width: 280px;
+  width: 28.57vw;
+  z-index: 2;
+}
+.kv-prefectures {
+  position: absolute;
+  top: 150px;
+  left: 6.923vw;
+  max-width: 280px;
+  width: 28.57vw;
+}
+.btn-start {
+  position: absolute;
+  bottom: 8.78vh;
+  right: 2.3vw;
+  width: 156px;
+  z-index: 2;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.btn-start:hover {
+  transform: scale(1.3);
+}
+
+.kv-bg {
+  background-image: url('../img/common/kv/kyushu-okinawa/2w40_fukuoka.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/**九州沖縄*/
+.kv-bg-img40 {
+  background-image: url('../img/common/kv/kyushu-okinawa/2w40_fukuoka.jpg');
+  background-position: center;
+}
+.kv-bg-img41 {
+  background-image: url('../img/common/kv/kyushu-okinawa/2w41_saga.jpg');
+  background-position: center;
+}
+.kv-bg-img42 {
+  background-image: url('../img/common/kv/kyushu-okinawa/2w42_nagasaki.jpg');
+  background-position: center;
+}
+.kv-bg-img43 {
+  background-image: url('../img/common/kv/kyushu-okinawa/2w43_kumamoto.jpg');
+  background-position: center;
+}
+.kv-bg-img44 {
+  background-image: url('../img/common/kv/kyushu-okinawa/2w44_ooita.jpg');
+  background-position: center;
+}
+.kv-bg-img45 {
+  background-image: url('../img/common/kv/kyushu-okinawa/2w45_miyazaki.jpg');
+  background-position: center;
+}
+.kv-bg-img46 {
+  background-image: url('../img/common/kv/kyushu-okinawa/2w46_kagoshima.jpg');
+  background-position: center;
+}
+.kv-bg-img47 {
+  background-image: url('../img/common/kv/kyushu-okinawa/2w47_okinawa.jpg');
+  background-position: center;
+}
+
+/**四国**/
+.kv-bg-img36 {
+  background-image: url('../img/common/kv/shikoku/2w36_tokushima.jpg');
+  background-position: center;
+}
+.kv-bg-img37 {
+  background-image: url('../img/common/kv/shikoku/2w37_kagawa.jpg');
+  background-position: center;
+}
+.kv-bg-img38 {
+  background-image: url('../img/common/kv/shikoku/2w38_ehime.jpg');
+  background-position: center;
+}
+.kv-bg-img39 {
+  background-image: url('../img/common/kv/shikoku/2w39_kochi.jpg');
+  background-position: center;
+}
+
+/**中国**/
+.kv-bg-img31 {
+  background-image: url('../img/common/kv/chugoku/2w31_tottori.jpg');
+  background-position: center;
+}
+.kv-bg-img32 {
+  background-image: url('../img/common/kv/chugoku/2w32_shimane.jpg');
+  background-position: center;
+}
+.kv-bg-img33 {
+  background-image: url('../img/common/kv/chugoku/2w33_okayama.jpg');
+  background-position: right;
+}
+.kv-bg-img34 {
+  background-image: url('../img/common/kv/chugoku/2w34_hiroshima.jpg');
+  background-position: center;
+}
+.kv-bg-img35 {
+  background-image: url('../img/common/kv/chugoku/2w35_yamaguchi.jpg');
+  background-position: left;
+}
+
+/**近畿**/
+.kv-bg-img30 {
+  background-image: url('../img/common/kv/kinki/2w30_wakayama.jpg');
+  background-position: center;
+}
+.kv-bg-img29 {
+  background-image: url('../img/common/kv/kinki/2w29_nara.jpg');
+  background-position: left;
+}
+.kv-bg-img28 {
+  background-image: url('../img/common/kv/kinki/2w28_hyogo.jpg');
+  background-position: right;
+}
+.kv-bg-img27 {
+  background-image: url('../img/common/kv/kinki/2w27_osaka.jpg');
+  background-position: right;
+}
+.kv-bg-img26 {
+  background-image: url('../img/common/kv/kinki/2w26_kyoto.jpg');
+  background-position: left;
+}
+.kv-bg-img25 {
+  background-image: url('../img/common/kv/kinki/2w25_shiga.jpg');
+  background-position: left;
+}
+.kv-bg-img24 {
+  background-image: url('../img/common/kv/kinki/2w24_mie.jpg');
+  background-position: left;
+}
+
+/**中部**/
+.kv-bg-img23 {
+  background-image: url('../img/common/kv/chubu/2w23_aichi.jpg');
+  background-position: left;
+}
+.kv-bg-img22 {
+  background-image: url('../img/common/kv/chubu/2w22_shizuoka.jpg');
+  background-position: center;
+}
+.kv-bg-img21 {
+  background-image: url('../img/common/kv/chubu/2w21_gifu.jpg');
+  background-position: left;
+}
+.kv-bg-img20 {
+  background-image: url('../img/common/kv/chubu/2w20_nagano.jpg');
+  background-position: center;
+}
+.kv-bg-img19 {
+  background-image: url('../img/common/kv/chubu/2w19_yamanashi.jpg');
+  background-position: right;
+}
+.kv-bg-img18 {
+  background-image: url('../img/common/kv/chubu/2w18_fukui.jpg');
+  background-position: left;
+}
+.kv-bg-img17 {
+  background-image: url('../img/common/kv/chubu/2w17_ishikawa.jpg');
+  background-position: right;
+}
+.kv-bg-img16 {
+  background-image: url('../img/common/kv/chubu/2w16_toyama.jpg');
+  background-position: left;
+}
+.kv-bg-img15 {
+  background-image: url('../img/common/kv/chubu/2w15_niigata.jpg');
+  background-position: left;
+}
+
+/**関東**/
+.kv-bg-img14 {
+  background-image: url('../img/common/kv/kanto/2w14_kanagawa.jpg');
+  background-position: left;
+}
+.kv-bg-img13 {
+  background-image: url('../img/common/kv/kanto/2w13_tokyo.jpg');
+  background-position: right;
+}
+.kv-bg-img12 {
+  background-image: url('../img/common/kv/kanto/2w12_chiba.jpg');
+  background-position: right;
+}
+.kv-bg-img11 {
+  background-image: url('../img/common/kv/kanto/2w11_saitama.jpg');
+  background-position: left;
+}
+.kv-bg-img10 {
+  background-image: url('../img/common/kv/kanto/2w10_gunma.jpg');
+  background-position: right;
+}
+.kv-bg-img09 {
+  background-image: url('../img/common/kv/kanto/2w09_tochigi.jpg');
+  background-position: left;
+}
+.kv-bg-img08 {
+  background-image: url('../img/common/kv/kanto/2w08_ibaraki.jpg');
+  background-position: left;
+}
+
+/*北海道・東北*/
+.kv-bg-img07 {
+  background-image: url('../img/common/kv/hokkaido-tohoku/2w07_fukushima.jpg');
+  background-position: right;
+}
+.kv-bg-img06 {
+  background-image: url('../img/common/kv/hokkaido-tohoku/2w06_yamagata.jpg');
+  background-position: light;
+}
+.kv-bg-img05 {
+  background-image: url('../img/common/kv/hokkaido-tohoku/2w05_akita.jpg');
+  background-position: left;
+}
+.kv-bg-img04 {
+  background-image: url('../img/common/kv/hokkaido-tohoku/2w04_miyagi.jpg');
+  background-position: right;
+}
+.kv-bg-img03 {
+  background-image: url('../img/common/kv/hokkaido-tohoku/2w03_iwate.jpg');
+  background-position: right;
+}
+.kv-bg-img02 {
+  background-image: url('../img/common/kv/hokkaido-tohoku/2w02_aomori.jpg');
+  background-position: left;
+}
+.kv-bg-img01 {
+  background-image: url('../img/common/kv/hokkaido-tohoku/2w01_hokkaido.jpg');
+  background-position: left;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  z-index: 1;
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+  padding: 0 1.538vw;
+}
+.footer-logo {
+  max-width: 292px;
+  width: 148px;
+}
+small {
+  font-size: 10.5px;
+  line-height: 1.8;
+  margin-left: 20px;
+}
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.swiper-slide-active .swiper-img,
+.swiper-slide-duplicate-active .swiper-img,
+.swiper-slide-prev .swiper-img {
+  animation: zoomUp 12s linear 0s normal both;
+}
+.swiper-slide img {
+  height: auto;
+  max-width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  .top-kv-text {
+    width: 92vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .kv-bg {
+    background-image: url('../img/common/kv/kyushu-okinawa/s40_fukuoka.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+  }
+
+  /*九州沖縄*/
+  .kv-bg-img40 {
+    background-image: url('../img/common/kv/kyushu-okinawa/s40_fukuoka.jpg');
+    background-position: right;
+  }
+  .kv-bg-img41 {
+    background-image: url('../img/common/kv/kyushu-okinawa/s41_saga.jpg');
+    background-position: right;
+  }
+  .kv-bg-img42 {
+    background-image: url('../img/common/kv/kyushu-okinawa/s42_nagasaki.jpg');
+    background-position: center;
+  }
+  .kv-bg-img43 {
+    background-image: url('../img/common/kv/kyushu-okinawa/s43_kumamoto.jpg');
+    background-position: center;
+  }
+  .kv-bg-img44 {
+    background-image: url('../img/common/kv/kyushu-okinawa/s44_ooita.jpg');
+    background-position: center;
+  }
+  .kv-bg-img45 {
+    background-image: url('../img/common/kv/kyushu-okinawa/s45_miyazaki.jpg');
+    background-position: right;
+  }
+  .kv-bg-img46 {
+    background-image: url('../img/common/kv/kyushu-okinawa/s46_kagoshima.jpg');
+    background-position: center;
+  }
+  .kv-bg-img47 {
+    background-image: url('../img/common/kv/kyushu-okinawa/s47_okinawa.jpg');
+    background-position: center;
+  }
+
+  /*四国*/
+  .kv-bg-img36 {
+    background-image: url('../img/common/kv/shikoku/s36_tokushima.jpg');
+    background-position: left;
+  }
+  .kv-bg-img37 {
+    background-image: url('../img/common/kv/shikoku/s37_kagawa.jpg');
+    background-position: right;
+  }
+  .kv-bg-img38 {
+    background-image: url('../img/common/kv/shikoku/s38_ehime.jpg');
+    background-position: right;
+  }
+  .kv-bg-img39 {
+    background-image: url('../img/common/kv/shikoku/s39_kochi.jpg');
+    background-position: right;
+  }
+
+  /*中国*/
+  .kv-bg-img31 {
+    background-image: url('../img/common/kv/chugoku/s31_tottori.jpg');
+    background-position: center;
+  }
+  .kv-bg-img32 {
+    background-image: url('../img/common/kv/chugoku/s32_shimane.jpg');
+    background-position: center;
+  }
+  .kv-bg-img33 {
+    background-image: url('../img/common/kv/chugoku/s33_okayama.jpg');
+    background-position: center;
+  }
+  .kv-bg-img34 {
+    background-image: url('../img/common/kv/chugoku/s34_hiroshima.jpg');
+    background-position: center;
+  }
+  .kv-bg-img35 {
+    background-image: url('../img/common/kv/chugoku/s35_yamaguchi.jpg');
+    background-position: center;
+  }
+
+  /*近畿*/
+  .kv-bg-img30 {
+    background-image: url('../img/common/kv/kinki/s30_wakayama.jpg');
+    background-position: center;
+  }
+  .kv-bg-img29 {
+    background-image: url('../img/common/kv/kinki/s29_nara.jpg');
+    background-position: center;
+  }
+  .kv-bg-img28 {
+    background-image: url('../img/common/kv/kinki/s28_hyogo.jpg');
+    background-position: right;
+  }
+  .kv-bg-img27 {
+    background-image: url('../img/common/kv/kinki/s27_osaka.jpg');
+    background-position: right;
+  }
+  .kv-bg-img26 {
+    background-image: url('../img/common/kv/kinki/s26_kyoto.jpg');
+    background-position: center;
+  }
+  .kv-bg-img25 {
+    background-image: url('../img/common/kv/kinki/s25_shiga.jpg');
+    background-position: center;
+  }
+  .kv-bg-img24 {
+    background-image: url('../img/common/kv/kinki/s24_mie.jpg');
+    background-position: center;
+  }
+
+  /*中部*/
+  .kv-bg-img23 {
+    background-image: url('../img/common/kv/chubu/s23_aichi.jpg');
+    background-position: center;
+  }
+  .kv-bg-img22 {
+    background-image: url('../img/common/kv/chubu/s22_shizuoka.jpg');
+    background-position: center;
+  }
+  .kv-bg-img21 {
+    background-image: url('../img/common/kv/chubu/s21_gifu.jpg');
+    background-position: left;
+  }
+  .kv-bg-img20 {
+    background-image: url('../img/common/kv/chubu/s20_nagano.jpg');
+    background-position: center;
+  }
+  .kv-bg-img19 {
+    background-image: url('../img/common/kv/chubu/s19_yamanashi.jpg');
+    background-position: right;
+  }
+  .kv-bg-img18 {
+    background-image: url('../img/common/kv/chubu/s18_fukui.jpg');
+    background-position: left;
+  }
+  .kv-bg-img17 {
+    background-image: url('../img/common/kv/chubu/s17_ishikawa.jpg');
+    background-position: center;
+  }
+  .kv-bg-img16 {
+    background-image: url('../img/common/kv/chubu/s16_toyama.jpg');
+    background-position: center;
+  }
+
+  .kv-bg-img15 {
+    background-image: url('../img/common/kv/chubu/s15_niigata.jpg');
+    background-position: center;
+  }
+
+  /*関東*/
+  .kv-bg-img14 {
+    background-image: url('../img/common/kv/kanto/s14_kanagawa.jpg');
+    background-position: center;
+  }
+  .kv-bg-img13 {
+    background-image: url('../img/common/kv/kanto/s13_tokyo.jpg');
+    background-position: center;
+  }
+  .kv-bg-img12 {
+    background-image: url('../img/common/kv/kanto/s12_chiba.jpg');
+    background-position: right;
+  }
+  .kv-bg-img11 {
+    background-image: url('../img/common/kv/kanto/s11_saitama.jpg');
+    background-position: center;
+  }
+  .kv-bg-img10 {
+    background-image: url('../img/common/kv/kanto/s10_gunma.jpg');
+    background-position: center;
+  }
+  .kv-bg-img09 {
+    background-image: url('../img/common/kv/kanto/s09_tochigi.jpg');
+    background-position: center;
+  }
+  .kv-bg-img08 {
+    background-image: url('../img/common/kv/kanto/s08_ibaraki.jpg');
+    background-position: center;
+  }
+
+  /*北海道・東北*/
+  .kv-bg-img07 {
+    background-image: url('../img/common/kv/hokkaido-tohoku/s07_fukushima.jpg');
+    background-position: right;
+  }
+  .kv-bg-img06 {
+    background-image: url('../img/common/kv/hokkaido-tohoku/s06_yamagata.jpg');
+    background-position: center;
+  }
+  .kv-bg-img05 {
+    background-image: url('../img/common/kv/hokkaido-tohoku/s05_akita.jpg');
+    background-position: center;
+  }
+  .kv-bg-img04 {
+    background-image: url('../img/common/kv/hokkaido-tohoku/s04_miyagi.jpg');
+    background-position: center;
+  }
+  .kv-bg-img03 {
+    background-image: url('../img/common/kv/hokkaido-tohoku/s03_iwate.jpg');
+    background-position: center;
+  }
+  .kv-bg-img02 {
+    background-image: url('../img/common/kv/hokkaido-tohoku/s02_aomori.jpg');
+    background-position: center;
+  }
+  .kv-bg-img01 {
+    background-image: url('../img/common/kv/hokkaido-tohoku/s01_hokkaido.jpg');
+    background-position: center;
+  }
+
+  .kv-text {
+    width: 50%;
+  }
+  .kv-prefectures {
+    width: 50%;
+    top: 24vw;
+  }
+  .btn-start {
+    bottom: 4.78vw;
+    width: 90px;
+  }
+  footer {
+    position: relative;
+    bottom: unset;
+    left: unset;
+    height: 100px;
+    padding: 18px 0;
+  }
+  .footer-inner {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .footer-logo {
+    width: 160px;
+    margin-bottom: 20px;
+  }
+}
+
+/*以下佐藤追記2023.01.11*/
+
+.t-a-c {
+  text-align: center;
+}
+
+.fs-l {
+  font-size: 2.6em;
+}
+
+.fs-m {
+  font-size: 1.6em;
+}
+
+.lh-m {
+  line-height: 2em;
+}
+
+.lh-s {
+  line-height: 1.7em;
+}
+
+.ls-m {
+  letter-spacing: 0.12em;
+}
+
+.ls-n-m {
+  letter-spacing: -0.01em;
+}
+
+.p-m {
+  padding: 3em 0;
+}
+
+.logo-prefectures {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.c-navy {
+  color: #0058a2;
+}
+
+.br-sp {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .logo-prefectures {
+    width: 74%;
+  }
+
+  .fs-l {
+    font-size: 1.4em;
+  }
+
+  .fs-m {
+    font-size: 1.2em;
+  }
+
+  .lh-m {
+    line-height: 1.8em;
+  }
+
+  .ls-m {
+    letter-spacing: 0.12em;
+  }
+
+  .ls-n-m {
+    letter-spacing: -0.01em;
+  }
+
+  .br-sp {
+    display: block;
+  }
+}

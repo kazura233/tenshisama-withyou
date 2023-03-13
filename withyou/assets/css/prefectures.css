@@ -1,0 +1,1169 @@
+@charset "UTF-8";
+/* 日本地図ページ */
+.prefectures-kv {
+  position: relative;
+  background-image: url('../img/common/kv/bg-base.png');
+  background-position: 0px bottom;
+  background-size: cover;
+  height: 100vh;
+  min-height: 1000px;
+}
+.prefectures-kv-detail {
+  position: relative;
+  background-image: url('../img/prefectures/prefectures-bg.png');
+  background-position: 100% 93%;
+  background-size: cover;
+  height: 100vh;
+}
+.prefectures-map {
+  position: absolute;
+  top: 4.46vw;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 580px;
+  width: 100%;
+  height: 100%;
+  max-height: 80%;
+  background-image: url('../img/prefectures/prefectures-map.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.prefectures-map img {
+  width: 100%;
+}
+.btn-area {
+  position: absolute;
+  top: 4.46vw;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  max-width: 580px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+}
+.hokkaido-tohoku-area {
+  position: absolute;
+  top: 230px;
+  left: 51%;
+  background-color: #e191db;
+}
+.kanto-area {
+  position: absolute;
+  top: 420px;
+  left: 67%;
+  background-color: #78c7dd;
+}
+.kinki-area {
+  position: absolute;
+  top: 500px;
+  left: 41%;
+  background-color: #72bfa3;
+}
+.chugoku-area {
+  position: absolute;
+  top: 440px;
+  left: -5%;
+  background-color: #91c16d;
+}
+.chubu-area {
+  position: absolute;
+  top: 340px;
+  left: 30%;
+  background-color: #a67fd2;
+}
+.shikoku-area {
+  position: absolute;
+  top: 550px;
+  left: 24%;
+  background-color: #f0a760;
+}
+.kyushu-okinawa-area {
+  position: absolute;
+  top: 610px;
+  left: -5%;
+  background-color: #ed857a;
+}
+
+.catch-area {
+  position: absolute;
+  top: 700px;
+  white-space: nowrap;
+  left: 13%;
+}
+.no-link {
+  background-color: rgba(120, 120, 120, 0.5);
+}
+.btn {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.btn::after {
+  content: '';
+  display: inline-block;
+  background-image: url('../img/prefectures/arrow.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 10px;
+  margin-left: 7px;
+}
+.prefectures-back {
+  position: absolute;
+  bottom: 70px;
+  right: 2vw;
+}
+.prefectures-back-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.prefectures-back-link-border {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #b9aa2d;
+  box-sizing: border-box;
+}
+.prefectures-back-link-border img {
+  width: 30px;
+  margin-bottom: 5px;
+}
+.prefectures-back-text {
+  font-size: 20px;
+  color: #b9aa2d;
+  margin-left: 10px;
+}
+.prefectures-back-logo {
+  width: 40px;
+  margin-left: 5px;
+}
+/* 北海道・東北エリア */
+.prefectures-map-hokkaido-tohoku {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  background-image: url('../../assets/img/prefectures/hokkaido-tohoku/hokkaido-tohoku.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.hokkaido-tohoku-btn-area {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+}
+
+.local-area {
+  background-color: #bbb373;
+}
+.hokkaido-btn {
+  position: absolute;
+  top: 140px;
+  left: 40%;
+}
+.aomori-btn {
+  position: absolute;
+  top: 330px;
+  left: -6%;
+}
+.iwate-btn {
+  position: absolute;
+  top: 414px;
+  left: 30%;
+}
+.akita-btn {
+  position: absolute;
+  top: 414px;
+  left: -15%;
+}
+.miyagi-btn {
+  position: absolute;
+  top: 510px;
+  left: 29%;
+}
+.yamagata-btn {
+  position: absolute;
+  top: 510px;
+  left: -15%;
+}
+.fukushima-btn {
+  position: absolute;
+  top: 570px;
+  left: 17%;
+}
+/* 関東エリア */
+.prefectures-map-kanto {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 478px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  background-image: url(../../assets/img/prefectures/kanto/kanto.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.kanto-btn-area {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 478px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.tochigi-btn {
+  position: absolute;
+  top: 90px;
+  left: 47%;
+}
+.gunma-btn {
+  position: absolute;
+  top: 120px;
+  left: 13%;
+}
+.ibaraki-btn {
+  position: absolute;
+  top: 220px;
+  left: 63%;
+}
+.saitama-btn {
+  position: absolute;
+  top: 250px;
+  left: 30%;
+}
+.tokyo-btn {
+  position: absolute;
+  top: 320px;
+  left: 12%;
+}
+.chiba-btn {
+  position: absolute;
+  top: 340px;
+  left: 70%;
+}
+.kanagawa-btn {
+  position: absolute;
+  top: 430px;
+  left: 20%;
+}
+/* 中部エリア */
+.prefectures-map-chuubu {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 478px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  background-image: url(../../assets/img/prefectures/chuubu/chuubu.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.chuubu-btn-area {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 478px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.niigata-btn {
+  position: absolute;
+  top: 100px;
+  left: 75%;
+}
+.toyama-btn {
+  position: absolute;
+  top: 230px;
+  left: 30%;
+}
+.ishikawa-btn {
+  position: absolute;
+  top: 250px;
+  left: 3%;
+}
+.nagano-btn {
+  position: absolute;
+  top: 280px;
+  left: 56%;
+}
+.fukui-btn {
+  position: absolute;
+  top: 350px;
+  left: -5%;
+}
+.yamanashi-btn {
+  position: absolute;
+  top: 365px;
+  left: 68%;
+}
+.gifu-btn {
+  position: absolute;
+  top: 375px;
+  left: 22%;
+}
+.shizuoka-btn {
+  position: absolute;
+  top: 470px;
+  left: 56%;
+}
+.aichi-btn {
+  position: absolute;
+  top: 470px;
+  left: 17%;
+}
+/* 近畿エリア */
+.prefectures-map-kinki {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 478px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  background-image: url(../../assets/img/prefectures/kinki/kinki.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.kinki-btn-area {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 478px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.kyoto-btn {
+  position: absolute;
+  top: 60px;
+  left: 27%;
+}
+.shiga-btn {
+  position: absolute;
+  top: 70px;
+  left: 60%;
+}
+.hyougo-btn {
+  position: absolute;
+  top: 150px;
+  left: 8%;
+}
+.mie-btn {
+  position: absolute;
+  top: 220px;
+  left: 75%;
+}
+.oosaka-btn {
+  position: absolute;
+  top: 240px;
+  left: 30%;
+}
+.nara-btn {
+  position: absolute;
+  top: 310px;
+  left: 50%;
+}
+.wakayama-btn {
+  position: absolute;
+  top: 450px;
+  left: 30%;
+}
+/* 中国エリア */
+.prefectures-map-chugoku {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 478px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  background-image: url(../../assets/img/prefectures/chugoku/chugoku.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.chugoku-btn-area {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 478px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.tottori-btn {
+  position: absolute;
+  top: 0px;
+  left: 72%;
+}
+.shimane-btn {
+  position: absolute;
+  top: 100px;
+  left: 15%;
+}
+.okayama-btn {
+  position: absolute;
+  top: 100px;
+  left: 70%;
+}
+.hiroshima-btn {
+  position: absolute;
+  top: 150px;
+  left: 40%;
+}
+.yamaguchi-btn {
+  position: absolute;
+  top: 220px;
+  left: 6%;
+}
+/* 四国エリア */
+.prefectures-map-shikoku {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 478px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  background-image: url(../../assets/img/prefectures/shikoku/shikoku.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.shikoku-btn-area {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 478px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.kagawa-btn {
+  position: absolute;
+  top: 0px;
+  left: 55%;
+}
+.tokushima-btn {
+  position: absolute;
+  top: 80px;
+  left: 75%;
+}
+.ehime-btn {
+  position: absolute;
+  top: 110px;
+  left: 10%;
+}
+.kouchi-btn {
+  position: absolute;
+  top: 150px;
+  left: 40%;
+}
+/* 九州・沖縄エリア */
+.prefectures-map-kyusyu-okinawa {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 478px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  background-image: url(../../assets/img/prefectures/kyusyu-okinawa/kyusyu-okinawa.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.kyusyu-okinawa-btn-area {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  max-width: 478px;
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.fukuoka-btn {
+  position: absolute;
+  top: 0px;
+  left: 43%;
+}
+.saga-btn {
+  position: absolute;
+  top: 50px;
+  left: 17%;
+}
+.ooita-btn {
+  position: absolute;
+  top: 100px;
+  left: 75%;
+}
+.nagasaki-btn {
+  position: absolute;
+  top: 150px;
+  left: 20%;
+}
+.kumamoto-btn {
+  position: absolute;
+  top: 200px;
+  left: 45%;
+}
+.miyazaki-btn {
+  position: absolute;
+  top: 270px;
+  left: 75%;
+}
+.kagoshima-btn {
+  position: absolute;
+  top: 370px;
+  left: 40%;
+}
+.okinawa-btn {
+  position: absolute;
+  top: 370px;
+  left: -5%;
+}
+/* prefectures.html　スライダーPC */
+.prefectures-wrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: 100px auto 0 auto;
+  padding: 0 100px;
+  height: 100vh;
+}
+
+.prefectures-bg {
+  background-image: conic-gradient(
+    from 20deg,
+    rgba(255, 255, 255, 1) 18deg,
+    rgba(240, 255, 250, 1) 68deg,
+    rgba(211, 247, 255, 1) 151deg,
+    rgba(245, 240, 255, 1) 263deg,
+    rgba(242, 253, 255, 1) 295deg,
+    rgba(255, 255, 255, 1) 360deg
+  );
+}
+.close_btn {
+  position: absolute;
+  top: -5%;
+  right: 2%;
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+.slick-slider {
+  -ms-touch-action: auto;
+  touch-action: auto;
+}
+.close_btn::before,
+.close_btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 2px;
+  height: 60px;
+  background: #56656a;
+}
+.close_btn::before {
+  transform: translate(-30px, -50%) rotate(45deg);
+}
+.close_btn::after {
+  transform: translate(-30px, -50%) rotate(-45deg);
+}
+.slide-img {
+  position: relative;
+}
+.slide-magnification {
+  position: absolute;
+  bottom: 0.5vw;
+  right: 2vw;
+  width: 45px;
+  height: 43px;
+}
+.slick-prev {
+  left: -50px;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 100px;
+  color: #5f6d71;
+}
+.slick-prev:before {
+  content: '';
+  display: block;
+  background-image: url('../img/prefectures/arrow-aprev.png');
+  background-size: cover;
+  width: 30px;
+  height: 60px;
+}
+.slick-next:after,
+.slick-next:after {
+  font-size: 100px;
+  color: #5f6d71;
+}
+.slick-next:before {
+  content: '';
+  display: block;
+  background-image: url('../img/prefectures/arrow-next.png');
+  background-size: cover;
+  width: 30px;
+  height: 60px;
+}
+.slick-next {
+  right: -10%;
+}
+.slide-text-area {
+  display: flex;
+  margin-top: 30px;
+}
+.slide-title {
+  font-size: 45px;
+  min-width: 135px;
+  color: #3f3f3f;
+  margin-right: 20px;
+}
+.slide-text-box {
+  display: block;
+}
+.slide-text-box::before {
+  content: '';
+  padding-bottom: 50px;
+  border: 1px solid #4b5b60;
+  box-sizing: border-box;
+}
+.slick-prev,
+.slick-next {
+  top: 38%;
+  right: -50px;
+  width: 30px;
+  height: 60px;
+}
+.slide-text {
+  font-size: 24px;
+  color: #3f3f3f;
+  margin-left: 20px;
+}
+.slide-sub-text {
+  font-size: 18px;
+  color: #3f3f3f;
+  margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  /* SP日本地図ページ */
+  .prefectures-kv {
+    background-position: top;
+    background-size: 100% 105%;
+    background-repeat: no-repeat;
+    background-image: url('../img/common/kv/bg-base-sp.png');
+    min-height: 160vw;
+  }
+  .prefectures-map {
+    top: 15.46vh;
+    width: 90.53vw;
+    max-height: 80%;
+  }
+  /* SP北海道・東北エリア */
+  .prefectures-map-hokkaido-tohoku {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+    background-image: url('../img/prefectures/hokkaido-tohoku/hokkaido-tohoku-sp.png');
+  }
+  .hokkaido-tohoku-btn-area {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+  }
+  .hokkaido-btn {
+    position: absolute;
+    top: 25vw;
+    left: 25vw;
+  }
+  .aomori-btn {
+    position: absolute;
+    top: 57vw;
+    left: 2vw;
+  }
+  .iwate-btn {
+    position: absolute;
+    top: 69vw;
+    left: 15vw;
+  }
+  .akita-btn {
+    position: absolute;
+    top: 69vw;
+    left: -2vw;
+  }
+  .miyagi-btn {
+    position: absolute;
+    top: 86vw;
+    left: 15vw;
+  }
+  .yamagata-btn {
+    position: absolute;
+    top: 86vw;
+    left: -2vw;
+  }
+  .fukushima-btn {
+    position: absolute;
+    top: 96vw;
+    left: 8vw;
+  }
+  .btn-area {
+    top: 15.46vh;
+    width: 90.53vw;
+  }
+  .btn {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .btn::after {
+    width: 13px;
+    height: 6px;
+  }
+  .hokkaido-tohoku-area {
+    top: 36vw;
+    left: unset;
+    right: 8vw;
+  }
+  .kanto-area {
+    top: 65vw;
+    left: unset;
+    right: 7vw;
+  }
+  .chubu-area {
+    top: 55vw;
+    left: unset;
+    right: 40vw;
+  }
+  .kinki-area {
+    top: 76vw;
+    left: unset;
+    right: 31vw;
+  }
+  .chugoku-area {
+    top: 70vw;
+    left: unset;
+    right: 67vw;
+  }
+  .shikoku-area {
+    top: 85vw;
+    left: unset;
+    right: 47vw;
+  }
+  .kyushu-okinawa-area {
+    top: 96vw;
+    left: unset;
+    right: 59vw;
+  }
+
+  .catch-area {
+    top: 110vw;
+    white-space: normal;
+    left: unset;
+    right: 8vw;
+  }
+
+  .prefectures-back {
+    bottom: 60px;
+    right: 5vw;
+  }
+  .prefectures-back-link-border {
+    padding-bottom: 10px;
+  }
+  .prefectures-back-link-border img {
+    width: 20px;
+  }
+  .prefectures-back-text {
+    font-size: 15px;
+  }
+  .prefectures-back-logo {
+    width: 30px;
+  }
+  /* SP関東エリア */
+  .prefectures-map-kanto {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+    background-image: url('../img/prefectures/kanto/kanto-sp.png');
+  }
+  .kanto-btn-area {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+  }
+  .tochigi-btn {
+    top: 11vw;
+    left: 29vw;
+  }
+  .gunma-btn {
+    top: 18vw;
+    left: 8vw;
+  }
+  .ibaraki-btn {
+    top: 27vw;
+    left: 39vw;
+  }
+  .saitama-btn {
+    top: 32vw;
+    left: 19vw;
+  }
+  .tokyo-btn {
+    top: 40vw;
+    left: 8vw;
+  }
+  .chiba-btn {
+    top: 44vw;
+    left: 42vw;
+  }
+  .kanagawa-btn {
+    top: 54vw;
+    left: 10vw;
+  }
+  /* 中部エリア */
+  .prefectures-map-chuubu {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+    background-image: url('../img/prefectures/chuubu/chuubu-sp.png');
+  }
+  .chuubu-btn-area {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+  }
+  .niigata-btn {
+    top: 12vw;
+    left: 46vw;
+  }
+  .toyama-btn {
+    top: 29vw;
+    left: 18vw;
+  }
+  .ishikawa-btn {
+    top: 32vw;
+    left: 0vw;
+  }
+  .nagano-btn {
+    top: 35vw;
+    left: 33vw;
+  }
+  .fukui-btn {
+    top: 43vw;
+    left: -4vw;
+  }
+  .yamanashi-btn {
+    top: 47vw;
+    left: 42vw;
+  }
+  .gifu-btn {
+    top: 47vw;
+    left: 13vw;
+  }
+  .shizuoka-btn {
+    top: 58vw;
+    left: 34vw;
+  }
+  .aichi-btn {
+    top: 58vw;
+    left: 10vw;
+  }
+  /* SP近畿エリア */
+  .prefectures-map-kinki {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+    background-image: url('../img/prefectures/kinki/kinki-sp.png');
+  }
+  .kinki-btn-area {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+  }
+  .kyoto-btn {
+    top: 7vw;
+    left: 17vw;
+  }
+  .shiga-btn {
+    top: 11vw;
+    left: 37vw;
+  }
+  .hyougo-btn {
+    top: 18vw;
+    left: 5vw;
+  }
+  .mie-btn {
+    top: 28vw;
+    left: 45vw;
+  }
+  .oosaka-btn {
+    top: 28vw;
+    left: 17vw;
+  }
+  .nara-btn {
+    top: 38vw;
+    left: 30vw;
+  }
+  .wakayama-btn {
+    top: 55vw;
+    left: 19vw;
+  }
+  /* SP中国エリア */
+  .prefectures-map-chugoku {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+    background-image: url('../img/prefectures/chugoku/chugoku-sp.png');
+  }
+  .chugoku-btn-area {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+  }
+  .tottori-btn {
+    top: 0vw;
+    left: 43vw;
+  }
+  .shimane-btn {
+    top: 13vw;
+    left: 10vw;
+  }
+  .okayama-btn {
+    top: 12vw;
+    left: 42vw;
+  }
+  .hiroshima-btn {
+    top: 19vw;
+    left: 26vw;
+  }
+  .yamaguchi-btn {
+    top: 29vw;
+    left: 5vw;
+  }
+
+  /* SP四国エリア */
+  .prefectures-map-shikoku {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+    background-image: url('../img/prefectures/shikoku/shikoku-sp.png');
+  }
+  .shikoku-btn-area {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+  }
+  .kagawa-btn {
+    position: absolute;
+    top: -2vw;
+    left: 34vw;
+  }
+  .tokushima-btn {
+    position: absolute;
+    top: 10vw;
+    left: 46vw;
+  }
+  .ehime-btn {
+    position: absolute;
+    top: 13vw;
+    left: 7vw;
+  }
+  .kouchi-btn {
+    position: absolute;
+    top: 19vw;
+    left: 25vw;
+  }
+  /* SP九州・沖縄エリア */
+  .prefectures-map-kyusyu-okinawa {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+    background-image: url('../img/prefectures/kyusyu-okinawa/kyusyu-okinawa.sp.png');
+  }
+  .kyusyu-okinawa-btn-area {
+    top: 25vh;
+    width: 60.53vw;
+    max-width: unset;
+  }
+  .fukuoka-btn {
+    top: 0vw;
+    left: 26vw;
+  }
+  .saga-btn {
+    top: 6vw;
+    left: 10vw;
+  }
+  .ooita-btn {
+    top: 13vw;
+    left: 46vw;
+  }
+  .nagasaki-btn {
+    top: 20vw;
+    left: 10vw;
+  }
+  .kumamoto-btn {
+    top: 23vw;
+    left: 25vw;
+  }
+  .miyazaki-btn {
+    top: 34vw;
+    left: 46vw;
+  }
+  .kagoshima-btn {
+    top: 48vw;
+    left: 24vw;
+  }
+  .okinawa-btn {
+    top: 47vw;
+    left: -3vw;
+  }
+  /* prefectures.html　スライダーSP */
+  .prefectures-wrapper {
+    padding: 0 25px;
+  }
+  .close_btn {
+    width: 30px;
+    height: 30px;
+  }
+  .close_btn::before,
+  .close_btn::after {
+    height: 30px;
+  }
+  .slide-text-area {
+    flex-direction: column;
+  }
+  .slide-magnification {
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+  }
+  .slide-titile {
+    margin-right: 0;
+  }
+  .slide-text-box::before {
+    border: none;
+  }
+  .slide-title {
+    font-size: 30px;
+    margin-right: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3f3f3f;
+    margin-bottom: 20px;
+  }
+  .slide-text {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  .slide-sub-text {
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .slick-prev:before {
+    width: 17px;
+    height: 35px;
+    background-color: #e8e8e7;
+  }
+  .slick-next:before {
+    width: 17px;
+    height: 35px;
+    background-color: #e8e8e7;
+    margin-left: 3px;
+  }
+  .slick-next {
+    top: 17px;
+    right: 0;
+  }
+  .slick-prev {
+    top: 17px;
+    left: 0;
+  }
+  .slick-arrow {
+    height: 35px;
+    z-index: 1;
+  }
+}
